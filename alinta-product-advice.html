@@ -15,6 +15,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR72LPYCXZ"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,8 +25,15 @@
 </script>
 
     <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css?r=1" rel="stylesheet">
-<link href="css/cover.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/dist/vendor.min.css">
+  <link rel="stylesheet" href="assets/dist/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/dist/snippets.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="assets/dist/theme.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -47,19 +55,161 @@
   </head>
   <body>
 
+<!-- ========== HEADER ========== -->
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white">
+  
 
-    <div class="position-fixed d-flex w-100 p-3 mx-auto flex-column bg-white shadow-sm">
-      <header class="mb-auto">
-          <div>
-            <a href="index.html"><h3 class="float-md-start mb-0">T.L.P.</h3></a>
-              <nav class="nav nav-masthead justify-content-center float-md-end">
-                  <a class="nav-link" href="index.html">Home</a>
-                  <a class="nav-link active" aria-current="page" href="1bill-service-design-ux.html">Work</a>
-                  <a class="nav-link" href="myuxprocess.html">My UX Process</a>
-              </nav>
-          </div>
-      </header>
+  <div class="container">
+    <nav class="js-mega-menu navbar-nav-wrap">
+      <!-- Default Logo -->
+      <a href="index.html"><h3 class="float-md-start mb-0">T.L.P.</h3></a>
+      <!-- End Default Logo -->
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <i class="bi-list"></i>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <i class="bi-x"></i>
+        </span>
+      </button>
+      <!-- End Toggler -->
+    
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Work Portfolio -->
+          <li class="hs-has-mega-menu nav-item">
+            <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " aria-current="page" href="#" role="button" aria-expanded="false">Work</a>
+
+            <!-- Mega Menu -->
+            <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+              <div class="row">
+                <div class="col-lg-6 d-none d-lg-block">
+                  <!-- Banner Image -->
+                  <div class="navbar-dropdown-menu-banner" style="background-image: url(img/shape-3.svg);">
+                    <div class="navbar-dropdown-menu-banner-content">
+                      <div class="mb-4">
+                        <span class="h2 d-block">Research Works</span>
+                        <p>Before i start i have to consider whether to start in the solution space — focusing on how the customer experiences the product or service — or start from the problem space; what are a person's goals and experiences with or without a product or service.
+                        </p>
+                      </div>
+                      <a class="btn btn-primary btn-transition" href="https://drive.google.com/file/d/1N5nVy7FRrMfQ_ZW_F2NCybkPz4jAwmYf/view">Watch VU Course Page testing <i class="bi-chevron-right small"></i></a>
+                    </div>
+                  </div>
+                  <!-- End Banner Image -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-lg-6">
+                  <div class="navbar-dropdown-menu-inner">
+                    <div class="row">
+                      <div class="col-sm mb-3 mb-sm-0">
+                        <span class="dropdown-header">Resi Connections</span>
+                        <a class="dropdown-item " href="1bill-service-design-ux.html">1Bill</a>
+                          <a class="dropdown-item " href="fast-connect.html">Fast Connect</a>
+                          <a class="dropdown-item " href="your-porter.html">Your Porter</a>
+                          <a class="dropdown-item " href="#">ANZ Marketplace <span class="badge bg-primary rounded-pill ms-1">Coming soon</span></a>
+
+                        <span class="dropdown-header">Alinta</span>
+                        <a class="dropdown-item " href="alinta-ast.html">Alinta AST </a>
+                        <a class="dropdown-item " href="alinta-ast-prototype.html">Alinta AST Prototype</a>
+                        <a class="dropdown-item " href="alinta-product-advice.html">Alinta Product Advice</a>
+                        <a class="dropdown-item " href="alinta.html">Alinta Sales Funnel</a>
+                        <a class="dropdown-item " href="kiosk-case-study.html">Digital Kiosk</a>
+
+                          <span class="dropdown-header">Freelance</span>
+                        <a class="dropdown-item " href="shouta-case-study.html">Shouta</a>
+                        <a class="dropdown-item " href="drive.html">Drive</a>
+
+                      </div>
+                      <!-- End Col -->
+
+                      <div class="col-sm">
+                        <div class="mb-3">
+                          <span class="dropdown-header">VU & RMIT</span>
+                          <a class="dropdown-item " href="vu.html">VU Transformation</a>
+                        <a class="dropdown-item " href="rmit-info-architecture.html">RMIT information Architecture</a>
+                        <a class="dropdown-item " href="rmit.html">RMIT Transformation</a>
+                        </div>
+
+                        <span class="dropdown-header">Organ Match</span>
+                        <a class="dropdown-item " href="organ-match.html">Organ Match</a>
+
+                        <span class="dropdown-header">Xperior</span>
+                        <a class="dropdown-item " href="city-place.html">City Place</a>
+                        <a class="dropdown-item " href="safe-fm.html">Safe FM</a>
+                        <a class="dropdown-item " href="xperior-facility-manager.html">Xperior Facility Manager</a>
+
+                        <span class="dropdown-header">UX Processes</span>
+                        <a class="dropdown-item " href="myuxprocess.html">Processes</a>
+                      </div>
+                      <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                  </div>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End Work Portfolio -->
+
+          <!-- My Processes -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">My Processes</a>
+
+            <!-- Mega Menu -->
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
+              <a class="dropdown-item " href="myuxprocess.html">My UX Processes</a>
+              <a class="dropdown-item " href="https://www.figma.com/file/eUlOjEqjkZmzFKi9URLvry/Home-shelf-digitise-the-plan-options-journey?node-id=2%3A130">FigJam</a>
+              <!--<a class="dropdown-item " href="../page-invoice.html">Invoice</a>-->
+              <!--<a class="dropdown-item " href="../page-error-404.html">Error 404</a>-->
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End My Processes -->
+
+          <!-- Social -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Social</a>
+
+            <!-- Mega Menu -->
+            <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
+              <a class="dropdown-item " href="https://www.linkedin.com/in/tiffany-palermo">Linkedin</a>
+              <a class="dropdown-item " href="https://github.com/Stiffany">Git</a>
+              <!--<a class="dropdown-item " href="../blog-newsroom.html">Newsroom</a>-->
+              <!--<div class="dropdown-divider"></div>-->
+            </div>
+            <!-- End Mega Menu -->
+          </li>
+          <!-- End Social -->
+
+          <!-- Home -->
+          <li class="hs-has-sub-menu nav-item">
+            <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link" href="index.html" role="button" aria-expanded="false">Home</a>
+          </li>
+          <!-- End Home -->
+
+          <!-- Button
+          <li class="nav-item">
+            <a class="btn btn-primary btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Buy now</a>
+          </li>
+          End Button -->
+        </ul>
+      </div>
+      <!-- End Collapse -->
+    </nav>
   </div>
+</header>
+
+<!-- ========== END HEADER ========== -->
+
+  
+  
   <main title="Product Advice, the companion app used by Alinta Sales Agents">
     <div class="container py-5">
       <div class="bg-white">
@@ -99,7 +249,7 @@
   
       <footer class="text-center mastfoot mt-auto">
         <p>Social
-            <a href="https://www.linkedin.com/in/tiffany-palermo-04a924126/" class="text-black-50" target="_blank">linkedin</a>
+            <a href="https://www.linkedin.com/in/tiffany-palermo" class="text-black-50" target="_blank">linkedin</a>
         </p>
         <div class="inner">
   
@@ -107,8 +257,25 @@
     </footer>
     </div>
   </main>
+  <script src="assets/dist/vendor.min.js"></script>
 
+  <script src="assets/dist/theme.min.js"></script>
+  <script>
+    (function() {
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
 
+      
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      new HSMegaMenu('.js-mega-menu', {
+          desktop: {
+            position: 'left'
+          }
+        })
+    })()
+  </script>
     
   </body>
 </html>
